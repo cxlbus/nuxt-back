@@ -90,7 +90,7 @@ export function scrollIt(
             };
     })();
 
-    let element= el_id?document.getElementsByClassName(el_id)[0]:document.documentElement
+    let element= el_id?document.getElementById(el_id):document.documentElement
     let start = element.scrollTop; // 当前滚动距离
     let startTime = Date.now(); // 当前时间
     function scroll() { // 滚动的实现
